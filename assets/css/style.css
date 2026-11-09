@@ -323,14 +323,13 @@ code, .formula {
   font-size: .95rem;
 }
 .qr-box { text-align: center; margin: 16px 0; }
-.qr-box .qr-placeholder {
-  width: 160px; height: 160px;
+.qr-box .qr-img {
+  width: 180px; height: 180px;
   margin: 0 auto;
-  border: 1px dashed var(--brand-line);
+  border: 1px solid var(--brand-line);
   border-radius: var(--radius);
-  display: flex; align-items: center; justify-content: center;
-  color: var(--faint); font-size: .85rem; text-align: center;
-  background: var(--surface);
+  display: block;
+  background: #fff;
 }
 
 /* ---------- 教程页 ---------- */

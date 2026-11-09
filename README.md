@@ -40,13 +40,10 @@ website/
 2. 上传 APK，**资产文件名务必用英文** `cece-v3.0.1.apk`（否则需同步修改按钮链接）。
 3. 若不想直接下载，访客也可通过「前往 Releases 页面」按钮手动下载。
 
-### 3. 生成二维码（iOS 引导）
+### 3. iOS 引导二维码（已完成）
 
-`download.html` 中 iOS 面板的二维码目前是占位框。请生成一个指向 PWA 网址（`https://你的用户名.github.io/cece/`）的二维码，保存为 `assets/img/qr.png`，然后把占位框替换为：
-
-```html
-<img src="assets/img/qr.png" alt="扫码访问 iOS PWA" width="160" height="160" />
-```
+`download.html` 中 iOS 面板的二维码已生成，图片位于 `assets/img/qr.png`，指向 PWA 网址
+`https://CeceSurvey.github.io/cece/`。如需更换指向，重新生成该图片即可。
 
 ## 部署（GitHub Pages）
 

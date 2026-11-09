@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>使用教程 · 测策</title>
+<meta name="description" content="测策使用教程：全站仪测绘、水准测量、角度测量的操作方法与计算逻辑。" />
+<meta name="theme-color" content="#0f5f6b" />
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ============ 导航 ============ -->
+<header class="site-nav">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="icons/icon.svg" alt="" />测策</a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="index.html" data-nav="index">首页</a>
+      <a href="download.html" data-nav="download">下载</a>
+      <a href="guide.html" data-nav="guide" aria-current="page">教程</a>
+      <a href="about.html" data-nav="about">关于</a>
+      <a class="btn btn--accent nav-cta" href="download.html">立即使用</a>
+    </nav>
+    <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="移动端导航">
+    <a href="index.html" data-nav="index">首页</a>
+    <a href="download.html" data-nav="download">下载</a>
+    <a href="guide.html" data-nav="guide">教程</a>
+    <a href="about.html" data-nav="about">关于</a>
+    <a class="btn btn--accent" href="download.html">立即使用</a>
+  </nav>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">使用教程</span>
+        <h1 class="section-title">从零开始，用好「测策」</h1>
+        <p class="section-sub">覆盖通用操作与三种测量的完整用法，含计算逻辑与公式。</p>
+      </div>
+
+      <div class="guide-layout">
+        <!-- 目录 -->
+        <aside class="toc" aria-label="教程目录">
+          <h3>本页目录</h3>
+          <ul>
+            <li><a href="#basic">通用操作</a></li>
+            <li><a href="#total">全站仪测绘</a></li>
+            <li><a href="#level">水准测量</a></li>
+            <li><a href="#angle">角度测量</a></li>
+            <li><a href="#analysis">数据分析</a></li>
+          </ul>
+        </aside>
+
+        <!-- 正文 -->
+        <div class="guide-content">
+
+          <!-- 通用操作 -->
+          <h2 id="basic">通用操作</h2>
+
+          <div class="card">
+            <h3>新建工作</h3>
+            <p>打开「测策」后，点首页「新建工作」：先选工作类型（全站仪 / 水准 / 角度），再填工作名称（默认按日期时间生成）。水准测量可额外填起点已知高程与容许闭合差系数，之后点「创建并开始」进入工作区。</p>
+          </div>
+
+          <div class="card">
+            <h3>工作管理</h3>
+            <p>「工作管理」支持：按名称搜索、按类型筛选、四种排序（最近修改 / 最早创建 / 名称 A→Z / 按类型）；右上角可「从文件导入工作」（单个或整包备份）与「批量管理」（多选后批量导出或删除）。每张工作卡片提供编辑 / 只读 / 重命名 / 删除。</p>
+          </div>
+
+          <div class="card">
+            <h3>自动保存与手动保存</h3>
+            <p>停止输入约 0.5 秒自动落盘；顶栏「保存」按钮或 <code>Ctrl / ⌘ + S</code> 可立即保存。数据保存在本机浏览器存储中，不联网。</p>
+          </div>
+
+          <div class="card">
+            <h3>导出与导入</h3>
+            <p>工作可导出为 <code>.cece.json</code> 文件备份；换设备或换平台时，在新设备上「导入」即可恢复。卸载软件或清理浏览器数据前，务必先导出备份。</p>
+          </div>
+
+          <!-- 全站仪测绘 -->
+          <h2 id="total">全站仪测绘</h2>
+
+          <div class="card">
+            <h3>表格与坐标方向</h3>
+            <p>表格列为：<b>排序 · 点号 · 棱镜高 · N(X) · E(Y) · H(Z) · 备注</b>，数字格统一三位小数。录入坐标后，图上立即成点：<b>N(X) 增大点向上、E(Y) 增大点向右</b>。</p>
+            <div class="note">说明：本模块是「坐标录入 + 成图」。水平角、距离到坐标的换算由全站仪或前序手工完成，程序不在此处做极坐标解算。</div>
+          </div>
+
+          <div class="card">
+            <h3>点号智能编号</h3>
+            <p>新建工作时点号留空。在空点号格聚焦时，程序会向上找最近的数字点号，用浅灰色给出「+1」的预测值；直接点别处（不输入）就落成真实点号，输入了则以你输入的为准。</p>
+          </div>
+
+          <div class="card">
+            <h3>点位分类</h3>
+            <p>备注命中关键词时自动归类（默认四类：<b>碎部点 / 控制点 / 测站点 / 辅助点</b>），点号颜色随之变化。图上「编辑点」可手动改某一点类型；分类与关键词可在「关于 → 程序设置」自定义。</p>
+          </div>
+
+          <div class="card">
+            <h3>连线与排序</h3>
+            <p>图上点选多个点可连成折线，支持改颜色 / 删除。按住首列滑块上下拖动可调整点位顺序。</p>
+          </div>
+
+          <!-- 水准测量 -->
+          <h2 id="level">水准测量</h2>
+
+          <div class="card">
+            <h3>记录表怎么填</h3>
+            <p>记录表每测站占两行（后视点行 / 前视点行）。在对应位置填入 <b>后视读数 a</b> 与 <b>前视读数 b</b>，以及各自的视距。高差与高程由程序自动计算。</p>
+          </div>
+
+          <div class="card">
+            <h3>计算逻辑</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>项</th><th>公式</th><th>说明</th></tr></thead>
+                <tbody>
+                  <tr><td>测段高差</td><td><code>h = a − b</code></td><td>后视减前视</td></tr>
+                  <tr><td>各点高程</td><td><code>H = H起 + Σh</code></td><td>逐段累计</td></tr>
+                  <tr><td>检核式</td><td><code>Σa − Σb = Σh = H终 − H始</code></td><td>三项应相等</td></tr>
+                  <tr><td>闭合差</td><td><code>f_h = Σh实测 − (H终 − H始)已知</code></td><td>单位 m</td></tr>
+                  <tr><td>改正数</td><td><code>v_i = −f_h × (L_i / ΣL)</code></td><td>按距离比例反号分配；缺距离按测段数均分；单位 mm</td></tr>
+                  <tr><td>改正后高差</td><td><code>h' = h + v / 1000</code></td><td>再由改正后高差累计得改正后高程</td></tr>
+                  <tr><td>容许闭合差</td><td><code>f_h允 = c√L</code></td><td>c 默认 40，L 为路线长（km）；超限标红</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>闭合 / 附合自动识别</h3>
+            <p>标题栏「H终」留空或等于起点高程 → 按<b>闭合</b>水准计算；填不同值 → 按<b>附合</b>水准计算。</p>
+          </div>
+
+          <div class="card">
+            <h3>成果表</h3>
+            <p>成果表列为：<b>测段编号 · 点号 · 测段距离 · 观测高差 · 高差改正值(mm) · 改正后高差 · 高程 H · 备注</b>，底部给出 Σ 与闭合差 f_h、容许闭合差 f_h允。</p>
+          </div>
+
+          <!-- 角度测量 -->
+          <h2 id="angle">角度测量</h2>
+
+          <div class="card">
+            <h3>测回法怎么填</h3>
+            <p>每个测回录入 4 个读数：<b>A 盘左、B 盘左、A 盘右、B 盘右</b>。读数支持多种度分秒格式，如 <code>45°30′30″</code>、<code>45 30 30</code>、<code>45:30:30</code>，程序统一解析。</p>
+          </div>
+
+          <div class="card">
+            <h3>计算逻辑</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>项</th><th>公式</th><th>说明</th></tr></thead>
+                <tbody>
+                  <tr><td>半测回角值</td><td><code>β左 = B盘左 − A盘左</code><br /><code>β右 = B盘右 − A盘右</code></td><td>归化到 [0°, 360°)</td></tr>
+                  <tr><td>一测回角值</td><td><code>β = (β左 + β右) / 2</code></td><td>圆周平均，避免 359°/1° 跨界出错</td></tr>
+                  <tr><td>半测回较差</td><td><code>β左 − β右</code></td><td>限差 <b>40″</b></td></tr>
+                  <tr><td>各测回平均角值</td><td><code>circularMean(β₁ … βₙ)</code></td><td>按测站分组取圆周平均</td></tr>
+                  <tr><td>测回间较差</td><td><code>βᵢ − 站平均</code></td><td>限差 <b>24″</b></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>限差判定</h3>
+            <p>程序自动统计超限的测回并标出，帮你快速发现超限的观测结果。</p>
+          </div>
+
+          <!-- 数据分析 -->
+          <h2 id="analysis">数据分析</h2>
+
+          <div class="card">
+            <h3>图表与指标</h3>
+            <p>「数据分析」选一份工作后，可查看概览指标与三类图表：全站仪「平面坐标图」、水准「里程—高程图」、角度「角值柱状图」。</p>
+          </div>
+
+          <div class="card">
+            <h3>导出</h3>
+            <p>支持三种导出：<b>导出图片</b>（PNG 带标题与图注）、<b>导出 CSV</b>（可用 Excel / WPS 打开）、<b>智能纸图</b>（按纸张尺寸选比例尺，附「纸上量取」表，仅全站仪 / 水准）。</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <div class="foot-brand"><img src="icons/icon.svg" alt="" />测策 · 工程测量</div>
+      <p class="foot-copy" style="margin-top:10px;">把测量数据，变成看得懂的图。</p>
+    </div>
+    <div>
+      <div class="foot-links">
+        <a href="index.html">首页</a>
+        <a href="download.html">下载</a>
+        <a href="guide.html">教程</a>
+        <a href="about.html">关于</a>
+      </div>
+      <p class="foot-copy" style="margin-top:14px;">
+        © 2026 <a href="about.html">ChaiYiChai</a> · <a href="about.html">CC BY-NC 4.0</a><br />
+        联系：<a href="mailto:cece_survey@outlook.com">cece_survey@outlook.com</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

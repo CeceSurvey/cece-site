@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>下载 · 测策</title>
+<meta name="description" content="获取测策：安卓下载 APK 安装，iOS 用 Safari 添加到主屏幕（PWA）。" />
+<meta name="theme-color" content="#0f5f6b" />
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ============ 导航 ============ -->
+<header class="site-nav">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="icons/icon.svg" alt="" />测策</a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="index.html" data-nav="index">首页</a>
+      <a href="download.html" data-nav="download" aria-current="page">下载</a>
+      <a href="guide.html" data-nav="guide">教程</a>
+      <a href="about.html" data-nav="about">关于</a>
+      <a class="btn btn--accent nav-cta" href="#download">立即使用</a>
+    </nav>
+    <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="移动端导航">
+    <a href="index.html" data-nav="index">首页</a>
+    <a href="download.html" data-nav="download">下载</a>
+    <a href="guide.html" data-nav="guide">教程</a>
+    <a href="about.html" data-nav="about">关于</a>
+    <a class="btn btn--accent" href="#download">立即使用</a>
+  </nav>
+</header>
+
+<main>
+  <section class="section" id="download">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">获取测策</span>
+        <h1 class="section-title">两个平台，任选其一</h1>
+        <p class="section-sub">数据可通过导出 / 导入在安卓、iOS、鸿蒙（卓易通）间互相迁移。</p>
+      </div>
+
+      <!-- Tab 切换 -->
+      <div class="download-tabs" role="tablist" aria-label="平台选择">
+        <button role="tab" aria-selected="true" aria-controls="panel-android" data-target="panel-android" id="tab-android">Android</button>
+        <button role="tab" aria-selected="false" aria-controls="panel-ios" data-target="panel-ios" id="tab-ios">iOS</button>
+      </div>
+
+      <!-- 安卓面板 -->
+      <div class="download-panel" id="panel-android" role="tabpanel" aria-labelledby="tab-android">
+        <div class="card">
+          <h2>Android 安装</h2>
+
+          <div class="dl-meta">
+            <span>当前版本 <b>v3.0.1</b></span>
+            <span>系统要求 <b>Android 7.0 及以上</b></span>
+          </div>
+
+          <div class="hero-cta" style="margin-top:8px;">
+            <a class="btn btn--accent btn--lg" href="https://github.com/CeceSurvey/cece/releases/latest/download/cece-v3.0.1.apk">下载 APK</a>
+            <a class="btn btn--ghost btn--lg" href="https://github.com/CeceSurvey/cece/releases/latest">前往 Releases 页面</a>
+          </div>
+
+          <h3 style="margin-top:28px;">安装步骤</h3>
+          <ol class="steps">
+            <li>点击「下载 APK」，下载完成后打开文件。</li>
+            <li>系统提示「允许安装未知应用」时，为当前来源开启允许。</li>
+            <li>点击「安装」，完成后从桌面打开「测策」。</li>
+          </ol>
+
+          <div class="callout">
+            提示：若系统拦截安装，请在「设置 → 安全 → 安装未知应用」中允许文件管理器或浏览器安装。
+          </div>
+        </div>
+      </div>
+
+      <!-- iOS 面板 -->
+      <div class="download-panel" id="panel-ios" role="tabpanel" aria-labelledby="tab-ios" hidden>
+        <div class="card">
+          <h2>iOS · 添加到主屏幕</h2>
+          <p>「测策」是 PWA（渐进式 Web 应用），添加到主屏幕后即可全屏、离线使用。</p>
+
+          <div class="dl-meta">
+            <span>方式 <b>PWA 封装</b></span>
+            <span>浏览器 <b>务必使用 Safari</b></span>
+            <span>环境要求 <b>HTTPS</b></span>
+          </div>
+
+          <h3 style="margin-top:24px;">安装步骤</h3>
+          <ol class="steps">
+            <li>用 <b>Safari</b> 打开本站或主程序网址（iOS 上 Chrome 不支持）。</li>
+            <li>点击底部中间的 <b>「分享」</b>按钮（方框加向上箭头）。</li>
+            <li>在弹出菜单中滑动，点击 <b>「添加到主屏幕」</b>。</li>
+            <li>可自定义名称（默认「测策」），点击右上角 <b>「添加」</b>。</li>
+            <li>主屏幕出现「测策」图标，点开即全屏运行。</li>
+          </ol>
+
+          <div class="qr-box">
+            <p style="color:var(--muted);">扫码直达 PWA 网址</p>
+            <!-- TODO: 生成指向 PWA 网址的二维码，保存为 assets/img/qr.png 后替换 -->
+            <div class="qr-placeholder">
+              二维码占位<br />指向<br />https://CeceSurvey.github.io/cece/
+            </div>
+          </div>
+
+          <div class="callout">
+            注意：iOS 版为 PWA 封装，不是 App Store 应用；离线缓存需在 HTTPS 环境下首次访问后生效。
+          </div>
+        </div>
+      </div>
+
+      <!-- 数据迁移提示 -->
+      <div class="card" style="margin-top:24px;">
+        <h3>换设备 / 换平台？</h3>
+        <p>数据不会自动云端同步。请在原设备上用「导出」生成 <code>.cece.json</code> 文件，再在新设备上「导入」即可无损迁移。</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <div class="foot-brand"><img src="icons/icon.svg" alt="" />测策 · 工程测量</div>
+      <p class="foot-copy" style="margin-top:10px;">把测量数据，变成看得懂的图。</p>
+    </div>
+    <div>
+      <div class="foot-links">
+        <a href="index.html">首页</a>
+        <a href="download.html">下载</a>
+        <a href="guide.html">教程</a>
+        <a href="about.html">关于</a>
+      </div>
+      <p class="foot-copy" style="margin-top:14px;">
+        © 2026 <a href="about.html">ChaiYiChai</a> · <a href="about.html">CC BY-NC 4.0</a><br />
+        联系：<a href="mailto:cece_survey@outlook.com">cece_survey@outlook.com</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  /* 支持 #android / #ios 锚点初始选中对应平台 */
+  (function () {
+    var hash = location.hash.replace('#', '');
+    if (hash === 'android' || hash === 'ios') {
+      var tab = document.getElementById('tab-' + hash);
+      if (tab) tab.click();
+    }
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>测策</title>
+<meta name="description" content="测策 —— 面向土木工程测量课程的辅助工具：全站仪测绘、水准测量、角度测量，边填数、边算成果、边成图。" />
+<meta name="theme-color" content="#0f5f6b" />
+<meta property="og:title" content="测策" />
+<meta property="og:description" content="把测量数据，变成看得懂的图。全站仪测绘 · 水准测量 · 角度测量。" />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- ============ 导航 ============ -->
+<header class="site-nav">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="icons/icon.svg" alt="" />
+      测策
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="index.html" data-nav="index" aria-current="page">首页</a>
+      <a href="download.html" data-nav="download">下载</a>
+      <a href="guide.html" data-nav="guide">教程</a>
+      <a href="about.html" data-nav="about">关于</a>
+      <a class="btn btn--accent nav-cta" href="download.html">立即使用</a>
+    </nav>
+    <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileMenu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="移动端导航">
+    <a href="index.html" data-nav="index">首页</a>
+    <a href="download.html" data-nav="download">下载</a>
+    <a href="guide.html" data-nav="guide">教程</a>
+    <a href="about.html" data-nav="about">关于</a>
+    <a class="btn btn--accent" href="download.html">立即使用</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1 class="hero-title">把测量数据，<br /><span class="hl">变成看得懂的图</span></h1>
+        <p class="hero-desc">全站仪测绘 · 水准测量 · 角度测量<br />一边填数据、一边计算、一边成图——简单、方便、高效。</p>
+        <div class="hero-cta">
+          <a class="btn btn--accent btn--lg" href="download.html">立即使用</a>
+          <a class="btn btn--ghost btn--lg" href="guide.html">查看教程</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <svg class="plot" viewBox="0 0 460 320" role="img" aria-label="全站仪测绘平面成图示意">
+          <rect width="460" height="320" fill="#ffffff"/>
+          <g stroke="#e8f0f1" stroke-width="1">
+            <line x1="60" y1="40" x2="60" y2="280"/><line x1="60" y1="280" x2="440" y2="280"/>
+            <line x1="110" y1="40" x2="110" y2="280"/><line x1="160" y1="40" x2="160" y2="280"/>
+            <line x1="210" y1="40" x2="210" y2="280"/><line x1="260" y1="40" x2="260" y2="280"/>
+            <line x1="310" y1="40" x2="310" y2="280"/><line x1="360" y1="40" x2="360" y2="280"/>
+            <line x1="410" y1="40" x2="410" y2="280"/>
+            <line x1="60" y1="80" x2="440" y2="80"/><line x1="60" y1="130" x2="440" y2="130"/>
+            <line x1="60" y1="180" x2="440" y2="180"/><line x1="60" y1="230" x2="440" y2="230"/>
+          </g>
+          <g fill="none" stroke="#0f5f6b" stroke-width="1.6">
+            <polyline points="120,200 200,140 300,180 360,100"/>
+            <line x1="120" y1="200" x2="200" y2="140"/>
+          </g>
+          <g stroke="#20808d" stroke-width="1.4" fill="none">
+            <line x1="360" y1="100" x2="300" y2="180" stroke-dasharray="4 4"/>
+          </g>
+          <g>
+            <circle cx="120" cy="200" r="5" fill="#0f5f6b"/><text x="128" y="196" font-size="12" fill="#0a4750">1</text>
+            <circle cx="200" cy="140" r="5" fill="#0f5f6b"/><text x="208" y="136" font-size="12" fill="#0a4750">2</text>
+            <circle cx="300" cy="180" r="5" fill="#0f5f6b"/><text x="308" y="176" font-size="12" fill="#0a4750">3</text>
+            <circle cx="360" cy="100" r="5" fill="#20808d"/><text x="368" y="96" font-size="12" fill="#0a4750">4</text>
+          </g>
+          <g font-size="11" fill="#64777c">
+            <text x="52" y="36" text-anchor="middle">N(X)↑</text>
+            <text x="438" y="296" text-anchor="end">E(Y)→</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 核心价值 ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">为什么用测策</span>
+        <h2 class="section-title">边录、边算、边看图</h2>
+        <p class="section-sub">用实时数据帮你把手感、方向感和判断力练出来。</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card value-card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="16" r="2.2"/><circle cx="17" cy="8" r="2.2"/><path d="M8.8 14.4 15.2 9.6"/></svg>
+          </div>
+          <h3>边录边看图</h3>
+          <p>输入坐标，点位实时落在图上。方向反了、点号重复了，一眼就能发现。</p>
+        </div>
+        <div class="card value-card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16"/><path d="M6.5 9V6.4M17.5 9V6.4"/><path d="M5 15h5M14 15h5"/><path d="M7.5 15v4M16.5 15v4"/></svg>
+          </div>
+          <h3>自动算成果</h3>
+          <p>水准闭合差、高差改正数、测回法角值，程序自动算好并给出限差判定。</p>
+        </div>
+        <div class="card value-card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.6"/></svg>
+          </div>
+          <h3>数据本地安全</h3>
+          <p>数据只存在你的设备里，可导出 .cece.json 工作存档；无需注册、无需联网。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 三大功能 ============ -->
+  <section class="section section--soft">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">三大功能</span>
+        <h2 class="section-title">覆盖三大基础工程测量</h2>
+        <p class="section-sub">只需创建一份工作，录入观测数据即可得到成果与图形。</p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card feat-card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M8 7h8l-1 6a3 3 0 0 1-6 0L8 7Z"/><path d="M12 16v5"/></svg>
+          </div>
+          <h3>全站仪测绘</h3>
+          <p>点位坐标录入与平面成图。填 N/E/H 坐标，点位即时落在图上，支持连线与点位分类。</p>
+          <div class="tags"><span class="tag">N/E/H 坐标</span><span class="tag">实时成图</span><span class="tag">连线</span></div>
+        </div>
+        <div class="card feat-card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h16"/><path d="M6.5 9V6.4M17.5 9V6.4"/><path d="M5 15h5M14 15h5"/><path d="M7.5 15v4M16.5 15v4"/></svg>
+          </div>
+          <h3>水准测量</h3>
+          <p>高差与高程计算、闭合差检核与改正、成果整理。闭合 / 附合自动识别。</p>
+          <div class="tags"><span class="tag">闭合/附合</span><span class="tag">改正数</span><span class="tag">里程图</span></div>
+        </div>
+        <div class="card feat-card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16"/><path d="M4 19 18 7"/><path d="M9.2 19a5.2 5.2 0 0 0 1.6-3.6"/></svg>
+          </div>
+          <h3>角度测量</h3>
+          <p>测回法观测与角值计算。半测回、一测回、测回间较差自动判定限差。</p>
+          <div class="tags"><span class="tag">半测回</span><span class="tag">一测回</span><span class="tag">限差判定</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 双平台入口 ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">开始使用</span>
+        <h2 class="section-title">两个平台，任选其一</h2>
+        <p class="section-sub">数据可通过导出 / 导入在安卓、iOS、鸿蒙（卓易通）间互相迁移。</p>
+      </div>
+      <div class="grid grid--2">
+        <div class="card platform-card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10 4.5h4"/></svg>
+          </div>
+          <h3>Android</h3>
+          <p>版本v3.0.1，适配Android 7.0 及以上。</p>
+          <a class="btn btn--primary" href="download.html#android">下载 APK</a>
+          <p class="platform-note">通过 GitHub Releases 分发</p>
+        </div>
+        <div class="card platform-card">
+          <div class="card-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>
+          </div>
+          <h3>iOS</h3>
+          <p>用 Safari「添加到主屏幕」，像 App 一样全屏使用。</p>
+          <a class="btn btn--primary" href="download.html#ios">添加到主屏幕</a>
+          <p class="platform-note">PWA 封装 · 无需 App Store</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <div class="foot-brand">
+        <img src="icons/icon.svg" alt="" />
+        测策 · 工程测量
+      </div>
+      <p class="foot-copy" style="margin-top:10px;">把测量数据，变成看得懂的图。</p>
+    </div>
+    <div>
+      <div class="foot-links">
+        <a href="index.html">首页</a>
+        <a href="download.html">下载</a>
+        <a href="guide.html">教程</a>
+        <a href="about.html">关于</a>
+      </div>
+      <p class="foot-copy" style="margin-top:14px;">
+        © 2026 <a href="about.html">ChaiYiChai</a> · <a href="about.html">CC BY-NC 4.0</a><br />
+        联系：<a href="mailto:cece_survey@outlook.com">cece_survey@outlook.com</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

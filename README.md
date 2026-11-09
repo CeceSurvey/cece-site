@@ -25,7 +25,7 @@ website/
 
 全站 4 处链接占位符已替换为 GitHub 用户名 `CeceSurvey`：
 
-- 下载页「下载 APK」→ `github.com/CeceSurvey/cece/releases/latest/download/cece-v3.0.1.apk`
+- 下载页「下载 APK」→ `github.com/CeceSurvey/cece/releases/latest/download/cece-v3.0.2.apk`
 - 下载页「前往 Releases」→ `github.com/CeceSurvey/cece/releases/latest`
 - 下载页二维码文字 → `CeceSurvey.github.io/cece/`
 - 关于页「查看源码」→ `github.com/CeceSurvey/cece`
@@ -34,10 +34,10 @@ website/
 
 ### 2. 上传 APK 到 GitHub Releases
 
-下载页的「下载 APK」按钮指向 `releases/latest/download/cece-v3.0.1.apk`，因此需要：
+下载页的「下载 APK」按钮指向 `releases/latest/download/cece-v3.0.2.apk`，因此需要：
 
-1. 在主程序仓库的 Releases 中新建一个 Release（tag 如 `v3.0.1`）。
-2. 上传 APK，**资产文件名务必用英文** `cece-v3.0.1.apk`（否则需同步修改按钮链接）。
+1. 在主程序仓库的 Releases 中新建一个 Release（tag 如 `v3.0.2`）。
+2. 上传 APK，**资产文件名务必用英文** `cece-v3.0.2.apk`（否则需同步修改按钮链接）。
 3. 若不想直接下载，访客也可通过「前往 Releases 页面」按钮手动下载。
 
 ### 3. iOS 引导二维码（已完成）

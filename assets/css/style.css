@@ -124,8 +124,10 @@ code, .formula {
 .nav-links a.btn--accent:hover { color: #fff; }
 .nav-toggle {
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 4px;
   width: 44px; height: 44px;
   border: none; background: none;
   color: var(--text); cursor: pointer;
@@ -134,7 +136,7 @@ code, .formula {
 .nav-toggle:hover { background: var(--brand-soft); }
 .nav-toggle .bar {
   display: block; width: 20px; height: 2px;
-  background: currentColor; margin: 4px auto;
+  background: currentColor; margin: 0;
   border-radius: 2px; transition: transform .2s, opacity .2s;
 }
 .nav-toggle[aria-expanded="true"] .bar:nth-child(1) { transform: translateY(6px) rotate(45deg); }
@@ -336,7 +338,9 @@ code, .formula {
 }
 
 /* ---------- 教程页 ---------- */
+/* grid 子项必须 min-width:0，否则表格/公式的 nowrap 会把整列撑破视口 */
 .guide-layout { display: grid; gap: 32px; align-items: start; }
+.guide-layout > * { min-width: 0; }
 .toc {
   background: var(--surface);
   border: 1px solid var(--line);
